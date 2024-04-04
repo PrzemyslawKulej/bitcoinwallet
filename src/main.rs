@@ -1,6 +1,6 @@
 use std::env;
 
-fn main() -> Result<(), Box<dyn std::error::Error>> {
+fn main() -> anyhow::Result<()> {
     println!("Hello, {}!", "World");
     dotenv::from_filename(".env").ok();
 
